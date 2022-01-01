@@ -97,6 +97,10 @@ public:
     }
   }
 
+  Capacity* get_data(){
+      return elems.data();
+  }
+
   void push_back(Capacity c) {
     elems.push_back(c);
   };
