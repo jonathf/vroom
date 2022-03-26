@@ -1,6 +1,28 @@
 # Changelog
 
-## [Unreleased]
+## [v1.11.0] - 2021-11-19
+
+### Added
+
+- `description` key for unassigned tasks in output, if provided (#403)
+- `location_index` key for unassigned tasks and each step, if provided (#625)
+- Shared target to makefile, for creating Position Independent Code (#617)
+- Exposing some internals for Python through compile flags (#640)
+- Stats on local search operators use for dev/debug purposes (#658)
+- Project can be compiled without routing support to limit dependencies (#676)
+
+### Changed
+
+- Refactor exception class (#639)
+- CI builds now run against `libosrm` v5.26.0 (#651)
+- Reduce computing time on PDPTW benchmarks by around 20% (#559)
+- Change Input and parser signature to simplify downstream usage (#665)
+- Use cxxopts as command line parser instead of getopt (#602)
+
+### Fixed
+
+- Remove duplicate definition of LocalSearch (#638)
+- Move priority check to Job constructor instead of input parser (#628)
 
 ## [v1.11.0] - 2021-11-19
 
